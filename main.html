@@ -1,13 +1,31 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Image Downloader</title>
+  <style>
+    #loading {
+      display: none;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    #error {
+      color: red;
+      margin: 10px 0;
+    }
+    #output img {
+      margin: 5px;
+      max-width: 200px;
+      max-height: 300px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <button id="download-images-button">Download Images</button>
+  <div id="loading">Loading...</div>
+  <div id="error"></div>
+  <div id="output"></div>
 
-<html>
-  <head>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-
-  <body>
-    <!-- the entire body must be written by student -->
-    <div id="output"></div>
-    <script type="text/javascript" src="./script.js"></script>
-  </body>
+	</body>
 </html>
